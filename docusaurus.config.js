@@ -16,9 +16,13 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-  themes: ['@docusaurus/theme-search-algolia'], //Algolia search
+  organizationName: 'Hanswanglin', // Usually your GitHub org/user name.
+  projectName: 'book', // Usually your repo name.
+  // themes: ['@docusaurus/theme-search-algolia'], //Algolia search
+  themes: [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+  ],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -136,6 +140,22 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      // algolia: {
+      //   // Algolia 提供的应用 ID
+      //   appId: 'YOUR_APP_ID',
+      //   //  公开 API 密钥：提交它没有危险
+      //   apiKey: 'YOUR_SEARCH_API_KEY',
+      //   indexName: 'YOUR_INDEX_NAME',
+      //   // 可选：见下文
+      //   contextualSearch: true,
+      //   // 可选：声明哪些域名需要用 window.location 型的导航而不是 history.push。 适用于 Algolia 配置会爬取多个文档站点，而我们想要用 window.location.href 在它们之间跳转时。
+      //   externalUrlRegex: 'external\\.com|domain\\.com',
+      //   // 可选：Algolia 搜索参数
+      //   searchParameters: {},
+      //   // 可选：搜索页面的路径，默认启用（可以用 `false` 禁用）
+      //   searchPagePath: 'search',
+      //   // ……其他 Algolia 参数
+      // },
     }),
 };
 

@@ -1,0 +1,8 @@
+{
+    "label": "Position Based Dynamics",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "目前zeno的PBD相关节点仍然在开发之中。暂未实用。 当前文档仅作为开发记录，并且会随着开发持续更新。"
+    }
+  }
